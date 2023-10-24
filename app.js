@@ -7,7 +7,7 @@ const appRoutes = require("./routers/approuters");
 const path = require("path");
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: "https://nusasthesis.com" }));
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "https://nusasthesis.com");
   next();
