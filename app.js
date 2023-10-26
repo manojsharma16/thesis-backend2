@@ -15,7 +15,7 @@ const app = express();
 //   );
 //   next();
 // });
-// app.use(cors({ origin: "https://nusasthesis.com" }));
+app.use(cors({ origin: "https://nusasthesis.com" }));
 app.use(function (req, res, next) {
   // res.header("Access-Control-Allow-Origin", "*");
   const allowedOrigins = [
